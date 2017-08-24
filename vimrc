@@ -279,7 +279,7 @@ autocmd BufRead * :set cpoptions+=J
 "===[ Groupings ]===
 augroup PerlFiles
     autocmd!
-    autocmd BufNewFile,BufRead *.t setfiletype perl
+    autocmd BufNewFile,BufRead *.t set filetype=perl
     autocmd FileType perl set expandtab tabstop=4 softtabstop=4 shiftwidth=4
     autocmd FileType perl set makeprg=perl\ -cw\ %\ $*
     autocmd FileType perl set errorformat=%f:%l:%m
@@ -290,14 +290,14 @@ augroup END
 
 augroup TclFiles
     autocmd!
-    autocmd BufNewFile,BufRead *.test setfiletype=tcl
+    autocmd BufNewFile,BufRead *.test set filetype=tcl
 augroup END
 
 augroup PythonFiles
     autocmd!
-    let python_highlight_all=1
     autocmd FileType python set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindent
     autocmd FileType python set fileformat=unix
+    autocmd FileType python let python_highlight_all=1
 augroup END
 
 augroup ShellFiles
@@ -314,7 +314,7 @@ augroup END
 
 augroup JavascriptFiles
     autocmd!
-    autocmd BufRead,BufNewFile *.jjs,*.jjsp setfiletype javascript
+    autocmd BufRead,BufNewFile *.jjs,*.jjsp set filetype=javascript
 augroup END
 
 augroup ModeModifiers
