@@ -1,5 +1,4 @@
 "===[ Turn it all on ]===
-"
 runtime macros/matchit.vim
 
 if !exists("g:syntax_on")
