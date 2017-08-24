@@ -232,7 +232,6 @@ set statusline+=\ [%P]
 
 "===[ Set colorscheme ]===
 colorscheme default
-colors default
 
 "===[ Options for GUI Vim ]===
 if has("gui_running")
@@ -250,7 +249,6 @@ if has("gui_running")
     set numberwidth=5
     set selectmode=mouse
     colorscheme apprentice
-    colors apprentice
     set vb t_vb=
     autocmd FocusGained * :redraw!
 endif
