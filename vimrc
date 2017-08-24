@@ -43,6 +43,10 @@ inoremap <leader><leader> <C-P>
 "===[ Make yank more intuitive ]===
 nnoremap Y y$
 
+"===[ move to beginning/end of line ]===
+nnoremap B ^
+nnoremap E $
+
 "===[ Indent entire file per syntax setting ]===
 nnoremap <leader>i  <esc>gg=G<cr>
 
